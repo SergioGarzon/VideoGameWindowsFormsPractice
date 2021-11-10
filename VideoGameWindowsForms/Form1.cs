@@ -61,14 +61,13 @@ namespace VideoGameWindowsForms
 
         private void button12_Click(object sender, EventArgs e)
         {
-            button4.Visible = true;
-            button5.Visible = true;
-            button6.Visible = true;
-            button7.Visible = true;
-            button8.Visible = true;
-            button9.Visible = true;
-            button10.Visible = true;
-            button11.Visible = true;
+            Button[] btn = { button4, button5, button6, button7, button8, button9, button10, button11 };
+
+            for (int i = 0; i < btn.Length; i++)
+            {
+                btn[i].Visible = true;
+            }
+
 
             panel3.Visible = false;
         }
@@ -80,15 +79,12 @@ namespace VideoGameWindowsForms
 
         private void button11_Click(object sender, EventArgs e)
         {
+            Button[] btn = { button4 , button5, button6, button7, button8, button9, button10, button11 };
 
-            button4.Visible = false;
-            button5.Visible = false;
-            button6.Visible = false;
-            button7.Visible = false;
-            button8.Visible = false;
-            button9.Visible = false;
-            button10.Visible = false;
-            button11.Visible = false;
+            for(int i = 0; i < btn.Length; i++)
+            {
+                btn[i].Visible = false;
+            }
 
             panel3.Visible = true;
     
